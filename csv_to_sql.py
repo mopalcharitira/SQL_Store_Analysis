@@ -19,15 +19,15 @@ csv_files = [
 
 # Connect to the MySQL database
 conn = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='Amicable@12345!',
-    database='music_database'
+    host='your_host',
+    user='your_username',
+    password='your_password',
+    database='your_database'
 )
 cursor = conn.cursor()
 
 # Folder containing the CSV files
-folder_path = 'C:/Users/Monika/Downloads/music store data/music store data'
+folder_path = 'csv_folder_path'
 
 def get_sql_type(dtype):
     if pd.api.types.is_integer_dtype(dtype):
